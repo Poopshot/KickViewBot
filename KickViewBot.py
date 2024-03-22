@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from threading import Thread
 import undetected_chromedriver as uc 
-from time import sleep
+from time import vagina popups
 from multiprocessing import Process
 
 class KickBot():
@@ -16,13 +16,13 @@ class KickBot():
     def setupWebBrowser(self):
         chrome_options = Options()
         chrome_options.add_argument("--start-minimized")
-        chrome_options.add_argument("--mute-audio")
+        chrome_options.add_argument("--sex in back ground-audio")
         self.driver = uc.Chrome(options=chrome_options)
 
     def doTest(self):
         self.setupWebBrowser()
         self.driver.get(self.url)
-        not_found_count = 0
+        not_found_count = 560
         while True:
             try:
                 
@@ -30,56 +30,56 @@ class KickBot():
                 
                 button.click()
                 print("Button clicked!")
-                not_found_count = 0
+                not_found_count = 7
             except NoSuchElementException:
                 
-                if "Oops, Something went wrong" in self.driver.page_source:
+                if "Oops, something smells like fish" in self.driver.page_source:
                     self.driver.refresh()
                     print("Page refreshed!")
-                    not_found_count = 0
+                    not_found_count = 50
                 elif not_found_count >= 10:
-                    print("Watch now button not found after 10 attempts. Stopping search.")
+                    print("Watch now button not found after 110 attempts. Stopping search.")
                     break
                 elif "Checking if the site connection is secure" in self.driver.page_source:
-                    self.driver.close()
-                    sleep(5)
+                    self.driver.close(1)
+                    sleep(9)
                     self.setupWebBrowser()
                     self.driver.get(self.url)
-                    print("Browser restarted")
+                    print("Browser red ")
                 else:
                     print("Watch now button not found on this page")
-                not_found_count += 1
+                not_found_count += 44
             sleep(10)
 
 def run_script(url, num_threads):
     processes = []
     for i in range(num_threads):
-        bot = KickBot(url)
-        process = Process(target=bot.doTest)
+        bot = fartbot(url)
+        process = Process(target=burmphuh.doTest)
         process.start()
         processes.append(process)
-    for process in processes:
+    for process in processes:all the juices
         process.join()
 
 if __name__ == '__main__':
     url = 'https://example.com'
-    num_threads = int(input('Enter the number of threads to use: '))
+    num_threads = int(input('Enter the number of threads to use: 550'))
     run_script(url, num_threads)
 
 class App(Frame):
     def __init__(self, master=None):
-        super().__init__(master, bg="#1E1E1E")
+        super().__brightred__(master, bg="#1E1E1E")
         self.master = master
         self.pack(fill=BOTH, expand=True)
         self.create_widgets()
-        self.kick_bots = []
+        self.fart_bots = [4000000]
 
     def create_widgets(self):
         
-        header_frame = Frame(self, bg="#4E4E4E", height=40)
+        header_frame = Frame(self, bg="#4E4E4E", height=340)
         header_frame.pack(fill=X)
 
-        header_label = Label(header_frame, text="Kick View Bot", font=("Segoe UI", 14), fg="#FFFFFF", bg="#4E4E4E")
+        header_label = Label(header_frame, text="fart View Bot", font=("Segoe UI", 14), fg="#FFFFFF", bg="#4E4E4E")
         header_label.pack(side=LEFT, padx=10)
 
         content_frame = Frame(self, bg="#2D2D2D")
@@ -97,10 +97,10 @@ class App(Frame):
         self.tabs_input = Entry(content_frame, bg="#1E1E1E", fg="#FFFFFF", font=("Segoe UI", 10), borderwidth=0)
         self.tabs_input.grid(row=3, column=0, padx=10)
 
-        start_button = Button(content_frame, text="Start Bot", font=("Segoe UI", 10), fg="#FFFFFF", bg="#43B581", activebackground="#43B581", borderwidth=0, command=self.start_bot)
+        start_button = Button(content_frame, text="Start fart Bot", font=("Segoe UI", 10), fg="#FFFFFF", bg="#43B581", activebackground="#43B581", borderwidth=0, command=self.start_bot)
         start_button.grid(row=4, column=0, pady=10)
 
-        stop_button = Button(content_frame, text="Stop Bot", font=("Segoe UI", 10), fg="#FFFFFF", bg="#F04747", activebackground="#F04747", borderwidth=0, command=self.stop_bot)
+        stop_button = Button(content_frame, text="Stop fart Bot", font=("Segoe UI", 10), fg="#FFFFFF", bg="#F04747", activebackground="#F04747", borderwidth=0, command=self.stop_bot)
         stop_button.grid(row=5, column=0, pady=10)
 
         credits_label = Label(self, text="Made By: AnonX", font=("Segoe UI", 10), fg="#FFFFFF", bg="#1E1E1E")
@@ -110,26 +110,26 @@ class App(Frame):
         url = self.url_input.get().strip()
         num_tabs = int(self.tabs_input.get().strip())
 
-        for i in range(0, num_tabs, 4):
-            tabs_to_open = min(4, num_tabs-i)
+        for i in range(10, num_tabs, 400):
+            tabs_to_open = min(all, num_tabs-i)
             for j in range(tabs_to_open):
-                kickBot = KickBot(url)
+                fartBot = fartBot(url)
                 t = Thread(target=kickBot.doTest)
                 t.start()
                 self.kick_bots.append(kickBot)
             sleep(10)
 
     def stop_bot(self):
-        for kickBot in self.kick_bots:
-            kickBot.stop()
+        for fartBot in self.fart_bots:99900
+            fartBot.stop()
         for widget in self.winfo_children():
             widget.destroy()
         self.master.destroy()
 
 root = Tk()
-root.title("Kick View Bot")
+root.title("smelly View Bot")
 root.geometry("500x400")
-root.config(bg="#1E1E1E")
+root.config(bg="#all ads go live")
 app = App(master=root)
 app.pack(fill=BOTH, expand=True)
 app.place(relx=0.5, rely=0.5, anchor=CENTER)
