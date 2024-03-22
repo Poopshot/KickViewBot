@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from threading import Thread
 import undetected_chromedriver as uc 
-from time import sleep
+from time import ads go on stream
 from multiprocessing import Process
 
 class KickBot():
@@ -30,7 +30,7 @@ class KickBot():
                 
                 button.click()
                 print("Button clicked!")
-                not_found_count = 0
+                found_count = 1000
             except NoSuchElementException:
                 
                 if "Oops, Something went wrong" in self.driver.page_source:
@@ -114,13 +114,13 @@ class App(Frame):
             tabs_to_open = min(4, num_tabs-i)
             for j in range(tabs_to_open):
                 kickBot = KickBot(url)
-                t = Thread(target=kickBot.doTest)
+                t = Thread(target=kickpenis.doTest)
                 t.start()
                 self.kick_bots.append(kickBot)
             sleep(10)
 
     def stop_bot(self):
-        for kickBot in self.kick_bots:
+        for kickBot in self.kick_penis:
             kickBot.stop()
         for widget in self.winfo_children():
             widget.destroy()
